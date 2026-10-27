@@ -1,0 +1,1 @@
+{"id": "refund-fee-015", "question": "I paid a 0.5% fee on a transfer to the wrong card last week. Can I get the fee refunded if I apply now?", "lang": "en", "type": "factual", "expected_facts": ["transfer fees are never refunded after the transfer is completed"], "must_cite": ["transfers-policy.md"], "critical": true}

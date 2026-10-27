@@ -1,0 +1,14 @@
+# Quality gate: re-run the golden set when prompts, documents or bot code change.
+# Add OPENAI_API_KEY as a masked CI/CD variable in GitLab (Settings > CI/CD > Variables).
+stages: [eval]
+llm-eval:
+  stage: eval
+  image: python:3.11-slim
+  rules:
+    - changes: [prompts/**/*, data/**/*, bankbot.py, evaluate.py]
+  script:
+    - pip install -r requirements.txt
+    - python evaluate.py          # exit code 1 blocks the merge request
+  artifacts:
+    when: always
+    paths: [reports/]

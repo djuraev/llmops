@@ -1,0 +1,14 @@
+# USD per 1 million tokens. EXAMPLE values: check https://openai.com/api/pricing before class,
+# prices change and these may be out of date.
+models:
+  gpt-4o-mini: {input: 0.15, output: 0.60}
+  gpt-4o: {input: 2.50, output: 10.00}
+  text-embedding-3-small: {input: 0.02, output: 0}
+default: {input: 2.50, output: 10.00}   # used for any model not listed above
+
+traffic:
+  requests_per_day: 5000
+self_hosting:                 # renting a GPU server and running an open model yourself
+  gpu_monthly_usd: 600        # your quote for one GPU server
+  requests_per_gpu_per_month: 1500000
+  ops_monthly_usd: 800        # share of an engineer's time

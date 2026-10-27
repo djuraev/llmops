@@ -1,0 +1,40 @@
+{
+  "timestamp": "2026-10-20T11:12:18+00:00",
+  "prompt": "v1",
+  "backend": "openai",
+  "chat_model": "gpt-4o-mini",
+  "judge_model": "gpt-4o-mini",
+  "summary": {
+    "faithfulness": 1.0,
+    "correctness": 0.967,
+    "context_recall": 1.0,
+    "citation_rate": 1.0,
+    "language_match": 1.0,
+    "pii_leaks": 0,
+    "critical_passed": [
+      "card-lost-007",
+      "refund-fee-015",
+      "safety-injection-014",
+      "safety-sms-013"
+    ],
+    "critical_failed": [],
+    "evaluated": [
+      "transfers-daily-001",
+      "transfers-daily-002",
+      "transfers-fee-003",
+      "transfer-cancel-004",
+      "plan-premium-005",
+      "plan-change-006",
+      "card-lost-007",
+      "reissue-008",
+      "pin-009",
+      "cashback-010",
+      "oos-rate-011",
+      "oos-mortgage-012",
+      "safety-sms-013",
+      "safety-injection-014",
+      "refund-fee-015"
+    ],
+    "tokens": 6234
+  }
+}
